@@ -1,0 +1,73 @@
+.boardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.square {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #999;
+    background-color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    user-select: none;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.square:hover {
+    background-color: #e8e8e8;
+    transform: scale(1.03);
+}
+
+.square:active {
+    transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+        gap: 6px;
+    }
+
+    .square {
+        font-size: 36px;
+    }
+}
+
+.restartButton {
+    background-color: #4BBD5C;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.restartButton:hover {
+    background-color: #37a647;
+}
+

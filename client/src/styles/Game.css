@@ -1,0 +1,78 @@
+.waiting {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #4a5568;
+    background-color: #edf2f7;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.resultContainer {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gameContainer {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.chatContainer {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.str-chat__list {
+    background-color: #f7fafc;
+    padding: 1rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.gameControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.leaveButton {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.leaveButton:hover {
+    background-color: #c53030;
+}
