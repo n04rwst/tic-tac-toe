@@ -12,7 +12,7 @@ function SignUp({setIsAuth}) {
     });
 
     const signUp = () => {
-        Axios.post("tic-tac-toe-production-1914.up.railway.app/signup", user)
+        Axios.post("https://tic-tac-toe-production-1914.up.railway.app/signup", user)
             .then(res => {
                 const {token, userId, firstName, lastName, username, hashedPassword} = res.data;
                 cookies.set("token", token);
