@@ -9,7 +9,7 @@ function Login({setIsAuth}) {
     const [password, setPassword] = useState('');
 
     const login = () => {
-        Axios.post("http://localhost:3001/login", {
+        Axios.post("tic-tac-toe-production-1914.up.railway.app/login", {
             username,
             password,
         }).then(res => {
